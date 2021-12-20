@@ -1,0 +1,64 @@
+/* Imports additional style sheet from reset.css file
+   Styles the page layout such as header, body, content/wrapper division and columns
+*/
+@import url("reset.css");
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#333
+}
+
+p {
+    padding: 10px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1500px;
+}
+
+#header {
+    float: left;
+    height: 75px;
+    width: 1500px;
+    background: #33b4ff;
+}
+
+#content {
+    float: left;
+    background: #FFFFFF;
+    width: 850px;
+    margin: 50px 0p 0px 0px;
+}
+#content ul {
+
+    margin: 50px 0 0 30px;
+}
+#leftcolumn {
+    background: #33CCFF;
+    width: 150px;
+    float: left;
+}
+
+#footer {
+    height: 40px;
+    width: 1500px;
+    background: #33FF66;
+    clear: both;
+}
+
+
+.nodisplay {
+    cursor: pointer;
+}
+.fixed.active {
+    position: fixed;
+    padding: 24px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    width: 30%;
+    box-shadow: 0 0px 10px rgb(0 0 255 / 20%);
+}

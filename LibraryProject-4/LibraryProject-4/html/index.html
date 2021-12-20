@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Library</title>
+
+<!--
+      Loads external files such as CSS, JavaSript files. Besides supports bootstrap library.
+-->
+
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="../js/book.js"></script> -->
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1><center>Augsburg Library</center></h1>
+            
+        </div>
+        <div id="leftcolumn">
+            <p>List Of books</p>
+
+<!--
+    Title of books displayed on the left side bar. Clicking on each menu shows details of a book on content
+    division to the right side. 
+-->
+
+            <ul class="list-group" id="booktitles">
+                <li id="thesecret" class="list-group-item" aria-current="true">The Secret</li>
+                <li id="thehateugive" class="list-group-item">The Hate u Give</li>
+                <li id= "thepoweroflettinggo" class="list-group-item"> The Power of Letting Go</li>
+                <li id= "millionairemindset" class="list-group-item"> Millionaire Mindset</li>
+              </ul> 
+
+        </div>
+        <div id="content">
+<!--
+    The details below are shown based on click event on #booktitles mentioned above. The 
+    #bookmainpage loads by default. Subsquent clicks on each menu shows corresponding details and hides
+    details of other book titles e.g.  Navigating The Secret menu opens list with id #one, The Hate u Give
+    with id #two and so forth.
+-->
+
+<!--    The book landing page defaulted to load if anyof the book titles aren't activated/clicked. Once 
+other book title is clicked it disapears-->
+
+              <article id="bookmainpage">
+               <h3>Welcome to Augsburg Library</h3>
+
+                   “Today a reader, tomorrow a leader.” – Margaret Fuller
+                   
+            </article>
+    <!--  Book details of "The Secret"   -->
+            <ul id="one" class="nodisplay">
+                  <li> <b> Author: </b> Rhonda Byrne </li>
+                  <li>  <b> Title: </b> The Secret   </li>
+                  <li> <b> Copyright Date: </b> November 2006</li>
+                  <li> <b> Pages: </b> 198</li>
+                  <li> <b> Summary: </b> The Secret is a self-help book by Rhonda Byrne that explains how 
+                    the law of attraction, which states that positive energy attracts positive things 
+                    into your life, governs your thinking and actions, and how you can use the power of 
+                    positive thinking to achieve anything you can imagine </li>
+                  <li> <img class="bookimg" src="../img/sec.jpg"> </li>
+            </ul> 
+
+   <!--  Book details of "The Hate U Give"   -->       
+          
+               
+               <ul id="two" class="nodisplay">
+                     <li> <b> Author: </b> Angie Thomas </li>
+                     <li>  <b> Title: </b> The Hate U Give  </li>
+                     <li> <b> Copyright Date: </b> February 2017</li>
+                     <li> <b> Pages: </b> 444 </li>
+                     <li> <b> Summary: </b> Sixteen-year-old Starr Carter moves between two worlds: the poor neighborhood 
+                      where she lives and the fancy suburban prep school she attends. The uneasy balance between 
+                      these worlds is shattered when Starr witnesses the fatal shooting of her childhood best friend 
+                      Khalil at the hands of a police officer. </li>
+                     <li> <img class="bookimg" src="../img/thug.jpg"> </li>
+               </ul>
+
+ <!--  Book details of "The Power of Letting Go"   -->   
+
+               <ul id="three" class="nodisplay">
+                  <li>  <b>Author: </b>John Purkiss </li>
+                  <li>  <b>Title: </b>The Power of Letting Go </li>
+                  <li><b>Copyright Date:</b> February 2020</li>
+                  <li><b>Pages:</b> 200 </li>
+                  <br>
+                  <li><b>Summary: </b>
+                       In The Power of Letting Go, John Purkiss explains why we should let go and how we can 
+                      do it, using proven techniques to make things happen. The stages of letting go: Be present and 
+                      enjoy each moment. Let go of the thoughts that keep you stuck.</li>
+                  <li> <img class="bookimg" src="../img/go.jpg"> </li>
+              </ul>
+
+ <!--  Book details of "Millionaire Mindset"   -->   
+              <ul id="four" class="nodisplay">
+                  <li>  <b> Author: </b> Paul J.Stanley </li>
+                  <li>  <b> Title: </b> Millionaire Mindset </li>
+                  <li> <b> Copyright Date: </b> April 2018</li>
+                  <li> <b> Pages: </b>230</li>
+                  <li> <b> Summary: </b> Written by the celebrated author and businessman T. Harv Eker, Secrets of the Millionaire 
+                      Mind describes how children of rich parents unconsciously inherit behavioral and cognitive patterns 
+                      that bind them to great wealth. This book is useful for those who want to become rich and adopt 
+                      wealth-earning habits.</li>
+                  <li> <img class="bookimg" src="../img/mil.jpg"> </li>
+              </ul>
+        
+       </div>
+        <div id="footer">
+            <p>Enjoy Your Reading!</p>
+        </div>
+        <div class="fixed">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
